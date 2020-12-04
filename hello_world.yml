@@ -5,7 +5,7 @@
       debug:
         msg: "Hello World!"
     - name: Change to directory backup
-      command: "docker exec awx_postgres pg_dump -U awx -Fc awx > `date +%m.%d.%y_%H.%M.%S`_awx_db.dump"
+      command: sh awx_backup.sh
       args:
         chdir: /u01/backup
       register: tobackup
