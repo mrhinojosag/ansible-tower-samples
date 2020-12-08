@@ -3,7 +3,7 @@
   tasks:
     - name: Hello Message
       debug:
-        msg: "Hello World!"
+        msg: "Hello World! {{ vnombre }}"
     - name: Change to directory backup
       command: sh awx_backup.sh
       args:
