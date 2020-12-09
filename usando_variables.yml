@@ -1,0 +1,9 @@
+- name: Usando Variables
+  hosts: all
+  tasks:
+    - name: Obtengo variable 1 y la mnuestro
+      debug:
+        msg: "Variable 1 : {{ variable1 }}"
+    - name: Obtengo variable 2 y la mnuestro
+      debug:
+        msg: "{{ variable2 }}"
