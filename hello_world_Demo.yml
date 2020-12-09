@@ -6,7 +6,7 @@
       debug:
         msg: "Hello World! this a Demo!!!"
     - name: Save the result of 'whoami' in 'whoami_out'
-      win_command: whoami
+      win_command: whoami.exe
       register: whoami_out
     - name: Run a cmd command
       win_command: cmd.exe /c mkdir D:\tempdemo
